@@ -56,7 +56,7 @@ cask "spark"
 cask "steam"
 cask "visual-studio-code"
 cask "vlc"
-mas "Contract", id: 1254981365
+mas "Contrast", id: 1254981365
 mas "iA Writer", id: 775737590
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
