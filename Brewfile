@@ -34,7 +34,7 @@ brew "tmux"
 brew "universal-ctags", args: ["HEAD"]
 brew "vim"
 brew "watchman"
-brew "yarn", args: ["without-node"]
+brew "yarn", args: ["ignore-dependencies"]
 brew "zplug"
 brew "zsh"
 brew "remind101/formulae/assume-role"
