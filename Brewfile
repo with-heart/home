@@ -31,7 +31,7 @@ brew "ruby", link: true
 brew "terraform"
 brew "tig"
 brew "tmux"
-brew "universal-ctags"
+brew "universal-ctags", args: ["HEAD"]
 brew "vim"
 brew "watchman"
 brew "yarn", args: ["without-node"]
