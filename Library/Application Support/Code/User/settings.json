@@ -1,0 +1,150 @@
+{
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)"
+  ],
+  "bracketPairColorizer.forceIterationColorCycle": true,
+  "editor.cursorBlinking": "phase",
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontSize": 17,
+  "editor.letterSpacing": 0.5,
+  "editor.lineHeight": 25,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "eslint.packageManager": "yarn",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "go.lintOnSave": "package",
+  "indentRainbow.colors": [
+    "rgba(255,204,102, 0.1)",
+    "rgba(092,207,230, 0.1)",
+    "rgba(186,230,126, 0.1)",
+    "rgba(242,135,121, 0.1)",
+    "rgba(212,191,255, 0.1)"
+  ],
+  "javascript.validate.enable": false,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.bracketSpacing": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.shell.osx": "zsh",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Field Lights",
+  "vim.leader": " ",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "black",
+  "vim.easymotionMarkerForegroundColorOneChar": "orange",
+  "vim.easymotionMarkerForegroundColorTwoChar": "orange",
+  "vim.easymotionMarkerFontFamily": "Source Code Pro",
+  "vim.easymotionMarkerFontSize": "20",
+  "vim.easymotionMarkerFontWeight": "bold",
+  "vim.easymotionMarkerHeight": 22,
+  "vim.easymotionMarkerWidthPerChar": 13,
+  "vim.easymotionMarkerYOffset": 3,
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["s"],
+      "after": ["leader", "leader", "s"]
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["2", "0", "k"]
+    },
+    {
+      "before": ["<C-d>"],
+      "after": ["2", "0", "j"]
+    }
+    // {
+    //   "before": [
+    //     "u"
+    //   ],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "undo"
+    //     }
+    //   ]
+    // },
+    // {
+    //   "before": [
+    //     "<C-r>"
+    //   ],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "redo"
+    //     }
+    //   ]
+    // }
+  ],
+  "vsicons.projectDetection.autoReload": true,
+  "window.zoomLevel": 0,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.tabSize": 2
+  },
+  "[yaml]": {
+    "editor.tabSize": 2
+  },
+  "workbench.startupEditor": "none",
+  "vsicons.dontShowNewVersionMessage": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.rendererType": "canvas",
+  "vim.hlsearch": true,
+  "prettier.trailingComma": "all",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "gitlens.keymap": "alternate",
+  "stylishHaskell.showConsoleOnError": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "bracket-pair-colorizer-2.colors": [
+    "Gold",
+    "Orchid",
+    "LightSkyBlue",
+    "Salmon",
+    "SpringGreen",
+    "Turquoise"
+  ]
+}

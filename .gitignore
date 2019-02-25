@@ -1,0 +1,29 @@
+*
+!/.aliases
+!/.config
+!/.config/karabiner
+!/.config/karabiner/karabiner.json
+!/.config/nvim
+!/.config/nvim/*
+!/.config/nvim/colors
+!/.config/nvim/colors/*
+!/.config/nvim/settings
+!/.config/nvim/settings/*
+!/.gitconfig
+!/.gitignore
+!/.zplugins
+!/.zsh
+!/.zshrc
+!/code
+!/code/work
+!/code/work/.gitconfig
+!/Library
+!/Library/Application\ Support/
+!/Library/Application\ Support/Code
+!/Library/Application\ Support/Code/User
+!/Library/Application\ Support/Code/User/settings.json
+!/Library/Application\ Support/Code/User/keybindings.json
+!/Library/Application\ Support/Code/User/snippets
+!/Library/Application\ Support/Code/User/snippets/*
+!/README.md
+!/Brewfile

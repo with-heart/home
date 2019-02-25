@@ -1,0 +1,29 @@
+## shorthands
+alias c="clear"
+alias e="$EDITOR"
+alias sudoedit="sudo $EDITOR"
+alias mkdir="mkdir -p"
+alias l="ls -lah"
+
+## replacements
+if command_exists fd; then
+  alias find="fd"
+fi
+
+if command_exists exa; then
+  alias ls="exa"
+fi
+
+## custom
+alias vim="$EDITOR"
+
+alias path='echo $PATH | tr -s ":" "\n"'
+
+alias tf=terraform
+
+# ripgrep
+alias rg="rg  --hidden --follow -g '!{.git,node_modules}/*'"
+alias rgf="rg --fixed-strings"
+
+# local custom aliases
+[[ -f ~/.aliases.local ]] && . ~/.aliases.local
