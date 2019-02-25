@@ -13,6 +13,7 @@
 !/.gitignore
 !/.zplugins
 !/.zsh
+!/.zsh/**
 !/.zshrc
 !/code
 !/code/work
