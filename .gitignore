@@ -11,6 +11,7 @@
 !/.config/nvim/settings/*
 !/.gitconfig
 !/.gitignore
+!/.gitmessage
 !/.tmux.conf
 !/.zplugins
 !/.zsh
