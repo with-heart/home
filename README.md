@@ -17,8 +17,3 @@ git checkout -b sh --depth 1 --track origin/master -f
 
 Which will overwrite any files that exist in this repo and keep any files that do not exist.
 Don't worry about cleaning up the `.git/` directory, the gitignore should be zealous enough to keep you from adding without explicitly calling them out.
-
-## Notes
-
-Oh my zsh uses git as a sync mechanism to update itself.
-I included it as a squashed git subtree and have modified the upgrade script to use `git subtree` rather than `git pull --rebase`.
