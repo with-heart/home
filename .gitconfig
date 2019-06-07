@@ -25,7 +25,7 @@
 [commit]
   template = ~/.gitmessage
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore.global
   editor = "NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim"
 	ignorecase = false
   filemode = true
