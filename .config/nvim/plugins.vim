@@ -22,7 +22,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('ayu-theme/ayu-vim')
   call dein#add('haishanh/night-owl.vim')
   call dein#add('dracula/vim', {'as': 'dracula'})
-  call dein#add('itchyny/lightline.vim')
   call dein#add('Yggdroot/indentLine')
 
   " Completion
@@ -33,7 +32,6 @@ if dein#load_state('~/.cache/dein')
 
   " File Navigation
   " ===============
-  call dein#add('majutsushi/tagbar')
   call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
   call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
 
@@ -79,7 +77,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('christoomey/vim-tmux-navigator')
   call dein#add('tpope/vim-repeat')
   call dein#add('tpope/vim-commentary')
-  call dein#add('ludovicchabant/vim-gutentags')
   call dein#add('pbrisbin/vim-mkdir')
   call dein#add('w0rp/ale', { 'do': 'npm install -g prettier' })
   call dein#add('prettier/vim-prettier', {
