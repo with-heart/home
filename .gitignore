@@ -4,7 +4,7 @@
 !/.config/karabiner
 !/.config/karabiner/karabiner.json
 !/.config/nvim
-!/.config/nvim/*
+!/.config/nvim/*.vim
 !/.config/nvim/colors
 !/.config/nvim/colors/*
 !/.config/nvim/settings
