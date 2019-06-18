@@ -63,3 +63,5 @@ complete -o nospace -C /usr/local/Cellar/terraform/0.11.8/bin/terraform terrafor
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
