@@ -55,6 +55,7 @@ if dein#load_state('~/.cache/dein')
   " Languages
   " =========
   call dein#add('sheerun/vim-polyglot')
+  call dein#add('jparise/vim-graphql')
   call dein#add('jxnblk/vim-mdx-js')
   call dein#add('hashivim/vim-terraform')
   call dein#add('juliosueiras/vim-terraform-completion')
