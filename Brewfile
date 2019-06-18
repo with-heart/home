@@ -27,6 +27,7 @@ brew "netlifyctl"
 brew "neovim"
 brew "openssl"
 brew "python"
+brew "reattach-to-user-namespace"
 brew "ripgrep"
 brew "ruby", link: true
 brew "terraform"
