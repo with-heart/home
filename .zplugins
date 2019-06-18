@@ -6,9 +6,6 @@ zplug "zsh-users/zsh-autosuggestions"
 
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
-export NVM_DIR="$HOME/.nvm"
-zplug "lukechilds/zsh-nvm"
-
 zplug "$HOME/.zsh/prompt", from:local
 
 # Install plugins if there are available plugins
