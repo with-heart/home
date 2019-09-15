@@ -4,8 +4,13 @@ alias e="$EDITOR"
 alias sudoedit="sudo $EDITOR"
 alias mkdir="mkdir -p"
 alias l="ls -lah"
+alias g="git"
 
 ## replacements
+if command_exists hub; then
+  alias g="hub"
+fi
+
 if command_exists fd; then
   alias find="fd"
 fi
