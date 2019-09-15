@@ -47,3 +47,7 @@
 	whitespace = red reverse
 [includeIf "gitdir:~/code/work/"]
   path = ~/code/work/.gitconfig
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff  "
