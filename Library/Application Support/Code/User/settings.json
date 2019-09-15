@@ -25,10 +25,13 @@
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
-    "other": false,
+    "other": true,
     "comments": false,
     "strings": false
   },
+  "editor.rulers": [
+    80
+  ],
   "editor.quickSuggestionsDelay": 100,
   "editor.tabSize": 2,
   "eslint.packageManager": "yarn",
@@ -76,22 +79,45 @@
   "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<esc>"
+      ]
     }
   ],
   "vim.normalModeKeyBindings": [
     {
-      "before": ["s"],
-      "after": ["leader", "leader", "s"]
+      "before": [
+        "s"
+      ],
+      "after": [
+        "leader",
+        "leader",
+        "s"
+      ]
     },
     {
-      "before": ["<C-u>"],
-      "after": ["2", "0", "k"]
+      "before": [
+        "<C-u>"
+      ],
+      "after": [
+        "2",
+        "0",
+        "k"
+      ]
     },
     {
-      "before": ["<C-d>"],
-      "after": ["2", "0", "j"]
+      "before": [
+        "<C-d>"
+      ],
+      "after": [
+        "2",
+        "0",
+        "j"
+      ]
     }
     // {
     //   "before": [
@@ -120,10 +146,12 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "[javascript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.tabSize": 2
@@ -149,60 +177,68 @@
     "Turquoise"
   ],
   "liveshare.featureSet": "insiders",
-  "workbench.statusBar.feedback.visible": false,
-  "peacock.favoriteColors": [
-    {
-      "name": "Angular Red",
-      "value": "#b52e31"
+  "git.autofetch": true,
+  "showMusicMetrics": false,
+  "showGitMetrics": false,
+  "showWeeklyRanking": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.presets.jsOfficial": true,
+  "workbench.activityBar.visible": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.views.repositories.location": "scm",
+  "gitlens.views.fileHistory.location": "explorer",
+  "gitlens.views.lineHistory.location": "explorer",
+  "gitlens.views.compare.location": "gitlens",
+  "gitlens.views.search.location": "gitlens",
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "details": false,
+      "history": false,
+      "remote": false
     },
-    {
-      "name": "Auth0 Orange",
-      "value": "#eb5424"
+    "editorGroup": {
+      "blame": true,
+      "compare": true
     },
-    {
-      "name": "Azure Blue",
-      "value": "#007fff"
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
     },
-    {
-      "name": "C# Purple",
-      "value": "#68217A"
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
     },
-    {
-      "name": "Gatsby Purple",
-      "value": "#639"
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true,
+      "stashInline": true
     },
-    {
-      "name": "Go Cyan",
-      "value": "#5dc9e2"
-    },
-    {
-      "name": "Java Blue-Gray",
-      "value": "#557c9b"
-    },
-    {
-      "name": "JavaScript Yellow",
-      "value": "#f9e64f"
-    },
-    {
-      "name": "Mandalorian Blue",
-      "value": "#1857a4"
-    },
-    {
-      "name": "Node Green",
-      "value": "#215732"
-    },
-    {
-      "name": "React Blue",
-      "value": "#00b3e6"
-    },
-    {
-      "name": "Something Different",
-      "value": "#832561"
-    },
-    {
-      "name": "Vue Green",
-      "value": "#42b883"
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true,
+      "stash": true
     }
-  ],
-  "git.autofetch": true
+  },
+  "githubPullRequests.defaultMergeMethod": "squash",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.showTabs": true,
+  "breadcrumbs.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
