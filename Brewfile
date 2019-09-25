@@ -59,6 +59,8 @@ cask "steam"
 cask "visual-studio-code"
 cask "vlc"
 mas "Contrast", id: 1254981365
+mas "Focus Matrix", id: 1087284172
+mas "Be Focused Pro", id: 961632517
 mas "iA Writer", id: 775737590
 mas "Keynote", id: 409183694
 mas "Markoff", id: 1084713122
