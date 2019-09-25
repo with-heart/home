@@ -24,11 +24,7 @@
   "editor.lineHeight": 25,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": false,
-    "strings": false
-  },
+  "editor.quickSuggestions": false,
   "editor.rulers": [
     80
   ],
@@ -237,8 +233,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.editor.showTabs": true,
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "workbench.colorCustomizations": {},
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
