@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-function md {
-  open $1 -a Markoff
-}

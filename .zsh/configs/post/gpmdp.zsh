@@ -1,1 +1,0 @@
-export GPMDP_AUTH_KEY=8c522332-aa7f-40c3-a41a-fbc203544f19
