@@ -31,6 +31,7 @@ brew "python"
 brew "reattach-to-user-namespace"
 brew "ripgrep"
 brew "ruby", link: true
+brew "Schniz/tap/fnm"
 brew "terraform"
 brew "tig"
 brew "tmux"
