@@ -1,0 +1,124 @@
+# configure tmux
+export LC_ALL="en_US.UTF-8"
+tm() {
+  [[ -n "$TMUX" ]] && change="switch-client" || change="attach-session"
+  if [ $1 ]; then
+     tmux $change -t "$1" 2>/dev/null || (tmux new-session -d -s $1 && tmux $change -t "$1"); return
+  fi
+  session=$(tmux list-sessions -F "#{session_name}" 2>/dev/null | fzf --exit-0) &&  tmux $change -t "$session" || echo "No sessions found."
+}
+
+# configure homebrew
+export HOMEBREW_AUTO_UPDATE_SECS=600000 # once/week
+export PATH="/usr/local/bin:$PATH"
+
+# configure opam
+[ -d ~/.opam ] && . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# configure haskell
+export PATH="$HOME/.local/bin:$PATH"
+
+# configure go
+export GOPATH="$HOME/go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$GOPATH/bin:$PATH"
+export PATH="$GOROOT/bin:$PATH"
+
+# configure fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export FZF_DEFAULT_COMMAND='rg --files --hidden --no-ignore --follow -g "!**/{.git,node_modules}/*" 2> /dev/null'
+export FZF_DEFAULT_OPTS='--color fg:231,fg+:231,bg:16,bg+:236,hl:212,hl+:212,info:84,prompt:231,pointer:117,spinner:141,marker:215'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# enable color constants
+autoload -U colors
+colors
+
+export BACKGROUND="#282a36"
+export FOREGROUND="#f8f8f2"
+export SELECTION="#44475a"
+export COMMENT="#6272a4"
+export CYAN="#8be9fd"
+export GREEN="#50fa7b"
+export ORANGE="#ffb86c"
+export PINK="#ff79c6"
+export PURPLE="#bd93f9"
+export RED="#ff5555"
+export YELLOW="#f1fa8c"
+
+# vi mode keybindings
+bindkey -v
+bindkey "^F" vi-cmd-mode
+
+bindkey "^[b" backward-word
+bindkey "^[f" forward-word
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+bindkey '^[d' backward-kill-word
+bindkey '^U' kill-whole-line
+
+# options
+setopt autopushd pushdminus pushdsilent pushdtohome cdablevars
+DIRSTACKSIZE=5
+
+setopt extendedglob
+
+setopt IGNORE_EOF
+
+unsetopt nomatch
+
+# editor
+if command_exists "nvim"; then
+  VISUAL="NVIM_TUI_ENABLE_COLOR=1 nvim"
+elif command_exists "mvim"; then
+  VISUAL="mvim -v"
+else
+  VISUAL="vim"
+fi
+
+# history
+export VISUAL="$VISUAL"
+export EDITOR="$VISUAL"
+
+setopt hist_ignore_all_dups inc_append_history
+HISTFILE=~/.zhistory
+HISTSIZE=4096
+SAVEHIST=4096
+
+export ERL_AFLAGS="-kernel shell_history enabled"
+
+# completions
+fpath=(~/.zsh/completion /usr/local/share/zsh/site-functions $fpath)
+
+autoload -Uz compinit
+if [[ -n $HOME/.zcompdump(#qN.mh+24) ]]; then
+  compinit -d $HOME/.zcompdump
+else
+  compinit -C
+fi
+
+compdef -d mcd
+
+# path stuff
+# ensure dotfiles bin directory is loaded first
+PATH="$HOME/.bin:$PATH"
+
+# mkdir .git/safe in the root of repos I trust
+# adds node_modules/.bin to PATH
+PATH=".git/safe/../../node_modules/.bin:$PATH"
+
+export -U PATH
+
+# source rerole
+source /Users/mchandler/.nvm/versions/node/v10.16.0/lib/node_modules/@with-heart/rerole/rerole
+
+# enable rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && \. "$HOME/.rvm/scripts/rvm"
+
+# configure wordchars
+export WORDCHARS='*?_[]~=&;!#$%^(){}'
