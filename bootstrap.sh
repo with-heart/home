@@ -26,3 +26,7 @@ cat ~/.config/vscode/extensions.list | grep -v '^#' | xargs -L1 code --install-e
 
 # Switch shell to Homebrew zsh
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+
+# Configure fnm
+fnm install latest
+fnm use latest
