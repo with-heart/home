@@ -15,3 +15,6 @@ brew bundle
 # Configure macos defaults
 ./.macos
 
+# Install vscode extensions
+cat ~/.config/vscode/extensions.list | grep -v '^#' | xargs -L1 code --install-extension
+
