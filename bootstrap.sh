@@ -22,6 +22,9 @@ rm ~/Library/Application\ Support/Code/User/keybindings.json
 ln -s /Users/$USER/.config/vscode/settings.json /Users/$USER/Library/Application\ Support/Code/User/settings.json
 ln -s /Users/$USER/.config/vscode/keybindings.json /Users/$USER/Library/Application\ Support/Code/User/keybindings.json
 
+# install rust
+rustup-init
+
 # Install vscode extensions
 cat ~/.config/vscode/extensions.list | grep -v '^#' | xargs -L1 code --install-extension
 

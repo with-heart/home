@@ -18,6 +18,10 @@ export PATH="/usr/local/bin:$PATH"
 # configure haskell
 export PATH="$HOME/.local/bin:$PATH"
 
+# configure rust
+PATH="$HOME/.cargo/bin:$PATH"
+source $HOME/.cargo/env
+
 # configure go
 export GOPATH="$HOME/go"
 export GOROOT="$(brew --prefix golang)/libexec"

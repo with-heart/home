@@ -30,6 +30,7 @@ brew "openssl"
 brew "python"
 brew "reattach-to-user-namespace"
 brew "ripgrep"
+brew "rustup"
 brew "ruby", link: true
 brew "fnm"
 brew "terraform"
