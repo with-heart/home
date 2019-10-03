@@ -28,5 +28,5 @@ cat ~/.config/vscode/extensions.list | grep -v '^#' | xargs -L1 code --install-e
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 
 # Configure fnm
-fnm install latest
+upgrade-node
 fnm use latest
