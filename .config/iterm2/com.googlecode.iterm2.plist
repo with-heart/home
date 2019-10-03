@@ -467,7 +467,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>983 186 810 567 0 0 1920 1177 </string>
+	<string>670 267 810 567 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>345 145 570 452 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
@@ -1249,7 +1249,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>01DCB3C2-1F84-43ED-85EE-3D95158F106F</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>3</integer>
+	<integer>6</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2005,6 +2005,8 @@
 	<string>/Users/markchandler/.config/iterm2</string>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
