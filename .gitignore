@@ -9,9 +9,11 @@
 !/.config/nvim/colors/*
 !/.config/nvim/settings
 !/.config/nvim/settings/*
+!/.functions
 !/.gitconfig
 !/.gitignore
 !/.gitmessage
+!/.settings
 !/.tmux.conf
 !/.zplugins
 !/.zsh
