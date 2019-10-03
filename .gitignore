@@ -18,6 +18,8 @@
 !/.gitmessage
 !/.macos
 !/.settings
+!/.ssh
+!/.ssh/config
 !/.tmux.conf
 !/.zplugins
 !/.zsh
