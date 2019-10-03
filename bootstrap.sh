@@ -15,6 +15,12 @@ brew bundle
 # Configure macos defaults
 ./.macos
 
+# Create vscode symbolic links
+rm ~/Library/Application\ Support/Code/User/settings.json
+rm ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s /Users/$USER/.config/vscode/settings.json /Users/$USER/Library/Application\ Support/Code/User/settings.json
+ln -s /Users/$USER/.config/vscode/keybindings.json /Users/$USER/Library/Application\ Support/Code/User/keybindings.json
+
 # Install vscode extensions
 cat ~/.config/vscode/extensions.list | grep -v '^#' | xargs -L1 code --install-extension
 
