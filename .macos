@@ -3,9 +3,6 @@
 # Close System Preferences to prevent it from overriding changed settings
 osascript -e 'tell application "System Preferences" to quit'
 
-# Keep-alive
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
 #
 # General UI/UX
 #
