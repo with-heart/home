@@ -9,6 +9,10 @@
 !/.config/nvim/colors/*
 !/.config/nvim/settings
 !/.config/nvim/settings/*
+!/.config/vscode
+!/.config/vscode/keybindings.json
+!/.config/vscode/settings.json
+!/.config/vscode/snippets/*
 !/.functions
 !/.gitconfig
 !/.gitignore
@@ -22,13 +26,5 @@
 !/code
 !/code/work
 !/code/work/.gitconfig
-!/Library
-!/Library/Application\ Support/
-!/Library/Application\ Support/Code
-!/Library/Application\ Support/Code/User
-!/Library/Application\ Support/Code/User/settings.json
-!/Library/Application\ Support/Code/User/keybindings.json
-!/Library/Application\ Support/Code/User/snippets
-!/Library/Application\ Support/Code/User/snippets/*
 !/README.md
 !/Brewfile
