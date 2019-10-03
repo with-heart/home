@@ -10,8 +10,7 @@
 !/.config/nvim/settings
 !/.config/nvim/settings/*
 !/.config/vscode
-!/.config/vscode/keybindings.json
-!/.config/vscode/settings.json
+!/.config/vscode/*
 !/.config/vscode/snippets/*
 !/.functions
 !/.gitconfig
