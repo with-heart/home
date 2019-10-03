@@ -16,6 +16,7 @@ brew bundle
 ./.macos
 
 # Create vscode symbolic links
+mkdir -p ~/Library/Application\ Support/Code/User
 rm ~/Library/Application\ Support/Code/User/settings.json
 rm ~/Library/Application\ Support/Code/User/keybindings.json
 ln -s /Users/$USER/.config/vscode/settings.json /Users/$USER/Library/Application\ Support/Code/User/settings.json
