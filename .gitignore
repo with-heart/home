@@ -1,6 +1,8 @@
 *
 !/.aliases
 !/.config
+!/.config/iterm2
+!/.config/iterm2/*
 !/.config/karabiner
 !/.config/karabiner/karabiner.json
 !/.config/nvim
