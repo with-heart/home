@@ -114,9 +114,6 @@ PATH=".git/safe/../../node_modules/.bin:$PATH"
 
 export -U PATH
 
-# source rerole
-source /Users/mchandler/.nvm/versions/node/v10.16.0/lib/node_modules/@with-heart/rerole/rerole
-
 # enable rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && \. "$HOME/.rvm/scripts/rvm"
 
