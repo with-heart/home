@@ -39,6 +39,7 @@ brew "tmux"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 brew "vim"
 brew "watchman"
+brew "wget"
 brew "zplug"
 brew "zsh"
 brew "remind101/formulae/assume-role"
