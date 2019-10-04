@@ -24,7 +24,7 @@
   "editor.lineHeight": 25,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  "editor.quickSuggestions": false,
+  "editor.quickSuggestions": true,
   "editor.rulers": [
     80
   ],
