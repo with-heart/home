@@ -21,6 +21,7 @@
 !/.gitignore
 !/.gitmessage
 !/.macos
+!/.prettierrc
 !/.settings
 !/.ssh
 !/.ssh/config
