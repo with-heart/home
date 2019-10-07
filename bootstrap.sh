@@ -25,6 +25,9 @@ ln -s /Users/$USER/.config/vscode/keybindings.json /Users/$USER/Library/Applicat
 # install rust
 rustup-init
 
+# install rvm and ruby
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+
 # Install vscode extensions
 cat ~/.config/vscode/extensions.list | grep -v '^#' | xargs -L1 code --install-extension
 
