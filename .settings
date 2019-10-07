@@ -30,6 +30,7 @@ export PATH="$GOROOT/bin:$PATH"
 
 # python
 eval "$(pyenv init -)"
+export PYENV_ROOT="$HOME/.pyenv"
 
 # configure fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
