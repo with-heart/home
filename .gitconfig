@@ -51,3 +51,5 @@
 	tool = vscode
 [difftool "vscode"]
 	cmd = "code --wait --diff  "
+[include]
+  path = ~/.gitconfig.local
