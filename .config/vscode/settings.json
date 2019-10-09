@@ -294,5 +294,27 @@
       "value": "#42b883"
     }
   ],
-  "python.jediEnabled": false
+  "python.jediEnabled": false,
+  "beautify.language": {
+    "js": {
+      "type": [
+        "javascript",
+        "json",
+        "jsonc"
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautifyrc"
+      ]
+    },
+    "css": [
+      "css",
+      "less",
+      "scss"
+    ],
+    "html": [
+      "htm",
+      "html"
+    ]
+  }
 }
