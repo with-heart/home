@@ -6,3 +6,4 @@ fkill-cli
 yarn
 @aws-amplify/cli
 neovim
+eslint
