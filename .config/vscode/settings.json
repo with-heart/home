@@ -70,6 +70,7 @@
   "vim.easymotionMarkerYOffset": 3,
   "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.statusBarColorControl": false,
   "vim.insertModeKeyBindings": [
     {
       "before": [
