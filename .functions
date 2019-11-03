@@ -8,6 +8,11 @@ command_exists() {
   type "$1" &> /dev/null;
 }
 
+install-default-packages() {
+  cat ~/.fnm/default-packages | grep -v '^[[:blank:]]*#|^[[:blank:]]*$' | xargs -L1 npm install -g
+}
+
+# Upgrade node to latest version & install packages
 upgrade-node() {
-  fnm install latest && cat ~/.fnm/default-packages | grep -v '^#' | xargs -L1 npm install -g
+  fnm install latest && install-default-packages
 }
