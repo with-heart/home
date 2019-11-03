@@ -7,3 +7,5 @@ yarn
 @aws-amplify/cli
 neovim
 eslint
+serverless
+spoof
