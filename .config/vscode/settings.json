@@ -52,9 +52,6 @@
     "rgba(212,191,255, 0.1)"
   ],
   "javascript.validate.enable": false,
-  "prettier.singleQuote": true,
-  "prettier.semi": false,
-  "prettier.bracketSpacing": false,
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.shell.osx": "zsh",
   "workbench.editor.enablePreview": false,
@@ -159,7 +156,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.rendererType": "canvas",
   "vim.hlsearch": true,
-  "prettier.trailingComma": "all",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
   "gitlens.keymap": "alternate",
