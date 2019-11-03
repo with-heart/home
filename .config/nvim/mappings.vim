@@ -52,7 +52,7 @@ xnoremap <tab> >gv
         \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
   imap <expr><silent><CR> pumvisible() ?
-        \ deoplete#mappings#close_popup() . "\<Plug>(neosnippet_expand_or_jump)" :
+        \ deoplete#close_popup() . "\<Plug>(neosnippet_expand_or_jump)" :
         \ "\<CR>\<Plug>AutoPairsReturn"
   smap <silent><CR> <Plug>(neosnippet_expand_or_jump)
   " }}}
