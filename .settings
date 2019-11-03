@@ -8,10 +8,6 @@ tm() {
   session=$(tmux list-sessions -F "#{session_name}" 2>/dev/null | fzf --exit-0) &&  tmux $change -t "$session" || echo "No sessions found."
 }
 
-# configure homebrew
-export HOMEBREW_AUTO_UPDATE_SECS=600000 # once/week
-export PATH="/usr/local/bin:$PATH"
-
 # configure opam
 [ -d ~/.opam ] && . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
@@ -127,3 +123,8 @@ export -U PATH
 
 # configure wordchars
 export WORDCHARS='*?_[]~=&;!#$%^(){}'
+
+# configure homebrew
+export HOMEBREW_AUTO_UPDATE_SECS=600000 # once/week
+export PATH="/usr/local/bin:$PATH"
+
