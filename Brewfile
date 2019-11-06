@@ -63,6 +63,7 @@ cask "java"
 cask "karabiner-elements"
 cask "keybase"
 cask "marshallofsound-google-play-music-player"
+cask "mark-text"
 cask "mongodb"
 cask "paw"
 cask "postman"
@@ -75,7 +76,6 @@ mas "Focus Matrix", id: 1087284172
 mas "Be Focused Pro", id: 961632517
 mas "iA Writer", id: 775737590
 mas "Keynote", id: 409183694
-mas "Markoff", id: 1084713122
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Spark", id: 1176895641
