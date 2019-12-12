@@ -5,6 +5,8 @@ alias sudoedit="sudo $EDITOR"
 alias mkdir="mkdir -p"
 alias l="ls -lah"
 alias g="git"
+alias yw="yarn workspace"
+alias yws="yarn workspaces"
 
 ## replacements
 if command_exists hub; then
