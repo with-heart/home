@@ -19,6 +19,10 @@ if command_exists exa; then
   alias ls="exa"
 fi
 
+if command_exists bat; then
+  alias cat="bat"
+fi
+
 ## custom
 alias vim="$EDITOR"
 
