@@ -82,4 +82,3 @@ mas "Pages", id: 409201541
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
-mas "Todoist", id: 585829637
