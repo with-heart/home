@@ -15,7 +15,4 @@
 # import aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-# fnm
-eval "$(fnm env)"
-
 #zprof
