@@ -134,3 +134,6 @@ export PATH="/usr/local/bin:$PATH"
 eval "$(fnm env --multi --use-on-cd)"
 
 # /fnm
+
+# configure openssl
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
