@@ -16,6 +16,8 @@
   st = status -s
   cl = clone
   ci = commit
+  cia = commit --amend
+  cian = commit --amend --no-edit
   co = checkout
   br = branch
   diff = diff --word-diff
