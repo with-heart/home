@@ -41,5 +41,10 @@ heart::git_status() {
   echo -n "$(git_prompt_status)$(git_prompt_info)"
 }
 
+heart::pyenv_status() {
+  [[ -v PYENV_VERSION ]] && echo -n "$PYENV_VERSION"
+}
+
 setopt promptsubst
 PROMPT='${NEWLINE}$(heart::status)$(heart::host)$(heart::current_dir)$(heart::git_status)'
+RPROMPT='$(heart::pyenv_status)'
