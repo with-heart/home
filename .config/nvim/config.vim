@@ -25,7 +25,7 @@ set listchars=tab:\ \ ,trail:·
 set list
 set lazyredraw
 set hidden
-set conceallevel=2 concealcursor=i
+set conceallevel=0 concealcursor=i
 set splitright
 set splitbelow
 set path+=**
@@ -89,25 +89,7 @@ set scrolloff=8
 set sidescrolloff=15
 set sidescroll=5
 
-" Statusline
-hi User1 guifg=#FF0000 guibg=#504945 gui=bold
-hi User2 guifg=#FFFFFF guibg=#FF1111 gui=bold
-hi User3 guifg=#2C323C guibg=#E5C07B gui=bold
-set statusline=\ %{toupper(mode())}                                             "Mode
-set statusline+=\ \│\ %{fugitive#head()}                                        "Git branch
-set statusline+=%{GitFileStatus()}                                              "Git file status
-set statusline+=\ \│\ %4F                                                       "File path
-set statusline+=\ %1*%m%*                                                       "Modified indicator
-set statusline+=\ %w                                                            "Preview indicator
-set statusline+=\ %r                                                            "Read only indicator
-set statusline+=\ %q                                                            "Quickfix list indicator
-set statusline+=\ %=                                                            "Start right side layout
-set statusline+=\ \│\ %y                                                        "Filetype
-set statusline+=\ \│\ %p%%                                                      "Percentage
-set statusline+=\ \│\ %c                                                        "Column number
-set statusline+=\ \│\ %l/%L                                                     "Current line number/Total line numbers
-set statusline+=\ %2*%{AleStatusline('error')}%*                                "Errors count
-set statusline+=%3*%{AleStatusline('warning')}%*                                "Warning count
+set statusline+=%f
 
 " Abbreviations
 cnoreabbrev Wq wq
@@ -125,23 +107,6 @@ function! StripTrailingWhitespaces()
     %s/\s\+$//e
     call cursor(l:l, l:c)
   endif
-endfunction
-
-function! CloseBuffer() abort
-  if &buftype ==? 'quickfix'
-    lclose
-    return 1
-  endif
-  let l:nerdtreeOpen = g:NERDTree.IsOpen()
-  let l:windowCount = winnr('$')
-  let l:command = 'bd'
-  let l:totalBuffers = len(getbufinfo({ 'buflisted': 1 }))
-  let l:isNerdtreeLast = l:nerdtreeOpen && l:windowCount ==? 2
-  let l:noSplits = !l:nerdtreeOpen && l:windowCount ==? 1
-  if l:totalBuffers > 1 && (l:isNerdtreeLast || l:noSplits)
-    let l:command = 'bp|bd#'
-  endif
-  silent exe l:command
 endfunction
 " }}}
 "

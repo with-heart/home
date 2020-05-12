@@ -1,96 +1,47 @@
-" Autoinstall dein.vim
-if empty(glob('~/.cache/dein/repos/github.com/Shougo/dein.vim'))
-  silent !curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-  silent !sh ./installer.sh ~/.cache/dein
-  autocmd VimEnter * call dein#install()
+let plug_install = 0
+let autoload_plug_path = stdpath('config') . '/autoload/plug.vim'
+if !filereadable(autoload_plug_path)
+    silent exe '!curl -fL --create-dirs -o ' . autoload_plug_path .
+        \ ' https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+    execute 'source ' . fnameescape(autoload_plug_path)
+    let plug_install = 1
 endif
+unlet autoload_plug_path
 
-if &compatible
-  set nocompatible
+call plug#begin('~/.config/nvim/plugins')
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Themes
+Plug 'ayu-theme/ayu-vim'
+Plug 'vim-airline/vim-airline-themes'
+
+" Quality of Life Plugins
+Plug 'alvan/vim-closetag'
+Plug 'christoomey/vim-tmux-navigator'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'pbrisbin/vim-mkdir'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'easymotion/vim-easymotion'
+Plug 'alvan/vim-closetag'
+Plug 'vim-airline/vim-airline'
+
+" Language support
+Plug 'sheerun/vim-polyglot'
+Plug 'jparise/vim-graphql'
+Plug 'jxnblk/vim-mdx-js'
+
+call plug#end()
+
+if plug_install
+    PlugInstall --sync
 endif
-
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
-
-if dein#load_state('~/.cache/dein')
-  call dein#begin('~/.cache/dein')
-
-  call dein#add('~/.cache/dein')
-  call dein#add('neomake/neomake')
-
-  " Appearance
-  " =========
-  call dein#add('ayu-theme/ayu-vim')
-  call dein#add('haishanh/night-owl.vim')
-  call dein#add('dracula/vim', {'as': 'dracula'})
-  call dein#add('Yggdroot/indentLine')
-
-  " Completion
-  " ==========
-  call dein#add('Shougo/deoplete.nvim')
-  call dein#add('carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' })
-  call dein#add('Shougo/neosnippet')
-
-  " File Navigation
-  " ===============
-  call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
-  call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
-
-  " Text Navigation
-  " ===============
-  call dein#add('easymotion/vim-easymotion')
-
-  " Text Manipulation
-  " ===============
-  call dein#add('tpope/vim-surround')
-  call dein#add('jiangmiao/auto-pairs')
-  call dein#add('godlygeek/tabular')
-  call dein#add('alvan/vim-closetag')
-  call dein#add('alx741/vim-hindent')
-
-  " Text Objects
-  " ============
-  call dein#add('kana/vim-textobj-user')
-  call dein#add('poetic/vim-textobj-javascript')
-
-  " Languages
-  " =========
-  call dein#add('sheerun/vim-polyglot')
-  call dein#add('jparise/vim-graphql')
-  call dein#add('jxnblk/vim-mdx-js')
-  call dein#add('hashivim/vim-terraform')
-  call dein#add('juliosueiras/vim-terraform-completion')
-  call dein#add('chr4/nginx.vim')
-  call dein#add('jasonshell/vim-svg-indent')
-  call dein#add('flowtype/vim-flow')
-  call dein#add('mattn/emmet-vim', { 'for': ['html', 'css', 'javascript.jsx'] })
-  call dein#add('ternjs/tern_for_vim', {'do': 'yarn install'})
-  call dein#add('hail2u/vim-css3-syntax')
-  call dein#add('styled-components/vim-styled-components')
-  call dein#add('posva/vim-vue')
-
-  " Git
-  " ===
-  call dein#add('tpope/vim-fugitive')
-  call dein#add('airblade/vim-gitgutter')
-
-  " Utility
-  " =======
-  call dein#add('christoomey/vim-tmux-navigator')
-  call dein#add('tpope/vim-repeat')
-  call dein#add('tpope/vim-commentary')
-  call dein#add('pbrisbin/vim-mkdir')
-  call dein#add('w0rp/ale', { 'do': 'npm install -g prettier' })
-  call dein#add('prettier/vim-prettier', {
-        \ 'do': 'npm install -g prettier',
-        \ 'rev': 'release/1.x' })
-
-  call dein#end()
-  call dein#save_state()
-endif
-
-if dein#check_install()
-  call dein#install()
-endif
+unlet plug_install
 
 filetype plugin indent on
 syntax enable
+
+let g:airline_theme='ayu_mirage'
