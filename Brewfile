@@ -79,6 +79,7 @@ cask "postman"
 cask "sizzy"
 cask "slack"
 cask "steam"
+cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
 mas "Contrast", id: 1254981365
