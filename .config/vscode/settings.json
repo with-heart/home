@@ -55,7 +55,6 @@
   "terminal.integrated.shell.osx": "zsh",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.colorTheme": "Field Lights (mine)",
   "vim.leader": " ",
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "black",
@@ -213,7 +212,7 @@
   "python.sortImports.args": [
     "-rc",
     "--atomic",
-    "--settings-path=Users/markchandler/.config/isort.cfg"
+    "--settings-path=/Users/markchandler/.config/isort.cfg"
   ],
   "vsintellicode.python.completionsEnabled": true,
   "rust.all_features": true,
@@ -230,8 +229,14 @@
   "terminal.integrated.fontSize": 16,
   "files.trimTrailingWhitespace": true,
   "vim.commandLineModeKeyBindings": [],
-  "eslint.migration.2_x": "off",
-  "python.languageServer": "Microsoft",
   "editor.fontSize": 18,
-  "editor.fontLigatures": true
+  "editor.fontLigatures": true,
+  "workbench.colorTheme": "Field Lights (mine)",
+  "typescript.tsserver.log": "verbose",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

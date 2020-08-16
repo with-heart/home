@@ -41,6 +41,7 @@ brew "ripgrep"
 brew "rustup"
 brew "ruby", link: true
 brew "fnm"
+brew "starship"
 brew "terraform"
 brew "tig"
 brew "tmux"
