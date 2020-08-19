@@ -69,3 +69,5 @@
 	driver = npx npm-merge-driver merge %A %O %B %P
 [pull]
 	ff = only
+[rebase]
+	autoStash = true
