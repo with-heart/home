@@ -36,6 +36,15 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --no-ignore --follow -g "!**/{.g
 export FZF_DEFAULT_OPTS='--color fg:231,fg+:231,bg:16,bg+:236,hl:212,hl+:212,info:84,prompt:231,pointer:117,spinner:141,marker:215'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+# fbr - checkout git branch (including remote branches), sorted by most recent commit, limit 30 last branches
+fbr() {
+  local branches branch
+  branches=$(git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format="%(refname:short)") &&
+  branch=$(echo "$branches" |
+           fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
+  git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
+}
+
 # enable color constants
 autoload -U colors
 colors
@@ -130,9 +139,7 @@ export HOMEBREW_AUTO_UPDATE_SECS=600000 # once/week
 export PATH="/usr/local/bin:$PATH"
 
 # fnm
-
 eval "$(fnm env --multi --use-on-cd)"
-
 # /fnm
 
 # configure openssl
