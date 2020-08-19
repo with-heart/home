@@ -1,6 +1,7 @@
 *
 !/.aliases
 !/.config
+!/.config/starship.toml
 !/.config/iterm2
 !/.config/iterm2/*
 !/.config/karabiner
