@@ -13,7 +13,10 @@
 [[ -f ~/.zshrc.local ]] && . ~/.zshrc.local
 
 # import aliases
-[[ -f ~/.aliases ]] && source ~/.aliases
+[[ -f ~/.aliases ]] && . ~/.aliases
+
+# import path shortcuts
+[[ -f ~/.paths ]] && . ~/.paths
 
 eval "$(starship init zsh)"
 
