@@ -16,3 +16,8 @@ install-default-packages() {
 upgrade-node() {
   fnm install latest && install-default-packages
 }
+
+# Enables virtual webcam for an app by codesigning the app file
+enablevirtualwebcam() {
+  sudo codesign -f -s - $1
+}
