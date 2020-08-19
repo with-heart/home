@@ -18,6 +18,8 @@
   ci = commit
   cia = commit --amend
   cian = commit --amend --no-edit
+  cinv = commit --no-verify
+  ciwip = commit --no-verify -m "WIP"
   co = checkout
   br = branch
   diff = diff --word-diff
