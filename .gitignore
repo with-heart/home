@@ -12,9 +12,6 @@
 !/.config/nvim/colors/*
 !/.config/nvim/settings
 !/.config/nvim/settings/*
-!/.config/vscode
-!/.config/vscode/*
-!/.config/vscode/snippets/*
 !/.fnm
 !/.fnm/default-packages
 !/.functions
