@@ -3,7 +3,7 @@
 !/.config
 !/.config/starship.toml
 !/.config/iterm2
-!/.config/iterm2/*
+!/.config/iterm2/com.googlecode.iterm2.plist
 !/.config/karabiner
 !/.config/karabiner/karabiner.json
 !/.config/nvim
