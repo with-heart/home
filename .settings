@@ -139,7 +139,7 @@ export HOMEBREW_AUTO_UPDATE_SECS=600000 # once/week
 export PATH="/usr/local/bin:$PATH"
 
 # fnm
-eval "$(fnm env --multi --use-on-cd)"
+eval "$(fnm env --use-on-cd)"
 # /fnm
 
 # configure openssl
