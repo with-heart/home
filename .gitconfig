@@ -1,6 +1,6 @@
 [user]
-  email = mark@chanchan.io
-  name = Mark Chandler
+	email = github@chanchan.io
+	name = Mark Chandler
 [alias]
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
   ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
