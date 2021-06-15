@@ -88,7 +88,7 @@ unsetopt nomatch
 
 # editor
 if command_exists "nvim"; then
-  VISUAL="NVIM_TUI_ENABLE_COLOR=1 nvim"
+  VISUAL="nvim"
 elif command_exists "mvim"; then
   VISUAL="mvim -v"
 else
