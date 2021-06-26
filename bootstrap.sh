@@ -28,9 +28,6 @@ rustup-init
 # install rvm and ruby
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
-# Install vscode extensions
-cat ~/.config/vscode/extensions.list | grep -v '^#' | xargs -L1 code --install-extension
-
 # Switch shell to Homebrew zsh
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 
