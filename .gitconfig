@@ -74,3 +74,5 @@
 	ff = only
 [rebase]
 	autoStash = true
+[rerere]
+	enabled = true
