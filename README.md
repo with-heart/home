@@ -17,3 +17,7 @@ git checkout -b sh --depth 1 --track origin/master -f
 
 Which will overwrite any files that exist in this repo and keep any files that do not exist.
 Don't worry about cleaning up the `.git/` directory, the gitignore should be zealous enough to keep you from adding without explicitly calling them out.
+
+## Recovery
+
+If you're recovering from a reformat or using a fresh laptop, follow the installation instructions above and then run `./bootstrap.sh`. This will install and configure the laptop as expected.
