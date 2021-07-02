@@ -17,7 +17,9 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'vim-airline/vim-airline-themes'
 
 " Quality of Life Plugins
-Plug 'alvan/vim-closetag'
+if !exists('g:vscode')
+  Plug 'alvan/vim-closetag'
+endif
 Plug 'christoomey/vim-tmux-navigator'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -26,7 +28,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'easymotion/vim-easymotion'
-Plug 'alvan/vim-closetag'
 Plug 'vim-airline/vim-airline'
 
 " Language support
