@@ -26,9 +26,6 @@
 !/.zsh
 !/.zsh/**
 !/.zshrc
-!/code
-!/code/work
-!/code/work/.gitconfig
 !/README.md
 !/Brewfile
 !/bootstrap.sh
