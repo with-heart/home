@@ -74,6 +74,7 @@ cask "signal"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
+cask "whatsapp"
 mas "Contrast", id: 1254981365
 mas "Focus Matrix", id: 1087284172
 mas "Be Focused Pro", id: 961632517
