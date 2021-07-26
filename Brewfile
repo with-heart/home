@@ -1,4 +1,7 @@
+# install GNU coreutils
 brew "coreutils"
+
+# tap various cask repositories before installing
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -8,6 +11,8 @@ tap "homebrew/cask-drivers"
 tap "netlify/netlifyctl"
 tap "remind101/formulae"
 tap "schniz/tap"
+
+# install brew packages
 brew "act"
 brew "asciinema"
 brew "awscli"
@@ -51,6 +56,8 @@ brew "wget"
 brew "zplug"
 brew "zsh"
 brew "remind101/formulae/assume-role"
+
+# install casks (apps)
 cask "1password"
 cask "alfred"
 cask "bose-updater"
@@ -75,6 +82,8 @@ cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
 cask "whatsapp"
+
+# install apps from the mac app store
 mas "Contrast", id: 1254981365
 mas "Focus Matrix", id: 1087284172
 mas "Be Focused Pro", id: 961632517
