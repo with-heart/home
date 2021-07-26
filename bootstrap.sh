@@ -6,6 +6,10 @@ sudo -v
 # sudo keep-alive
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Install xcode developer tools
+xcode-select --install
+sudo xcodebuild -license accept
+
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
