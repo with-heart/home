@@ -19,13 +19,6 @@ brew bundle
 # Configure macos defaults
 ./.macos
 
-# Create vscode symbolic links
-mkdir -p ~/Library/Application\ Support/Code/User
-rm ~/Library/Application\ Support/Code/User/settings.json
-rm ~/Library/Application\ Support/Code/User/keybindings.json
-ln -s /Users/$USER/.config/vscode/settings.json /Users/$USER/Library/Application\ Support/Code/User/settings.json
-ln -s /Users/$USER/.config/vscode/keybindings.json /Users/$USER/Library/Application\ Support/Code/User/keybindings.json
-
 # install rust
 rustup-init
 
