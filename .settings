@@ -24,11 +24,6 @@ export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$GOROOT/bin:$PATH"
 
-# python
-eval "$(pyenv init -)"
-export PYENV_ROOT="$HOME/.pyenv"
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-
 # configure fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
