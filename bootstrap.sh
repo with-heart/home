@@ -36,6 +36,7 @@ rustup-init
 sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 
 # Configure fnm
+fnm install latest
 fnm use latest
 
 # Install various things that aren't in homebrew
