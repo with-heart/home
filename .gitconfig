@@ -1,5 +1,5 @@
 [user]
-	email = github@chanchan.io
+	email = with.heart+git@pm.me
 	name = Mark Chandler
 [alias]
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
