@@ -15,9 +15,6 @@
 # import aliases
 [[ -f ~/.aliases ]] && . ~/.aliases
 
-# import path shortcuts
-[[ -f ~/.paths ]] && . ~/.paths
-
 # initialize starship prompt
 eval "$(starship init zsh)"
 
