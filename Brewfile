@@ -42,6 +42,7 @@ brew "neovim"
 brew "now-cli"
 brew "openssl"
 brew "ripgrep"
+brew "rust-analyzer"
 brew "rustup"
 brew "ruby", link: true
 brew "fnm"
