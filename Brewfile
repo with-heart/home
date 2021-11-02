@@ -41,7 +41,6 @@ brew "netlifyctl"
 brew "neovim"
 brew "now-cli"
 brew "openssl"
-brew "reattach-to-user-namespace"
 brew "ripgrep"
 brew "rustup"
 brew "ruby", link: true
