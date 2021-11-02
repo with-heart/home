@@ -61,6 +61,7 @@ brew "remind101/formulae/assume-role"
 
 # install casks (apps)
 cask "1password"
+cask "alacritty"
 cask "alfred"
 cask "bose-updater"
 cask "discord"
