@@ -5,11 +5,7 @@
 !/.config/iterm2
 !/.config/iterm2/com.googlecode.iterm2.plist
 !/.config/nvim
-!/.config/nvim/*.vim
-!/.config/nvim/colors
-!/.config/nvim/colors/*
-!/.config/nvim/settings
-!/.config/nvim/settings/*
+!/.config/nvim/**
 !/.fnm
 !/.fnm/default-packages
 !/.functions
