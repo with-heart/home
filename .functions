@@ -14,7 +14,9 @@ install-default-packages() {
 
 # Upgrade node to latest version & install packages
 upgrade-node() {
-  fnm install latest && install-default-packages
+  fnm install "$1"
+  fnm use "$1"
+  install-default-packages
 }
 
 # Enables virtual webcam for an app by codesigning the app file
