@@ -1,6 +1,8 @@
 *
 !/.aliases
 !/.config
+!/.config/alacritty
+!/.config/alacritty/**
 !/.config/starship.toml
 !/.config/iterm2
 !/.config/iterm2/com.googlecode.iterm2.plist
