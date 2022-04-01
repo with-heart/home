@@ -139,3 +139,7 @@ eval "$(fnm env --use-on-cd)"
 
 # configure openssl
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+# run tabtab for package auto-completions
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
