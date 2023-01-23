@@ -27,6 +27,7 @@
   addw = "!f() { git add **\"$1\"*;  }; f"
   addpw = "!f() { git add -p **\"$1\"*;  }; f"
 	dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
+  dsfs = dsf --staged
   change-commits = "!f() { VAR1=$1; VAR='$'$1; OLD=$2; NEW=$3; echo \"Are you sure for replace $VAR $OLD => $NEW ?(Y/N)\";read OK;if [ \"$OK\" = 'Y'  ] ; then shift 3; git filter-branch --env-filter \"if [ \\\"${VAR}\\\" = '$OLD'  ]; then export $VAR1='$NEW';echo 'to $NEW'; fi\" $@; fi; }; f "
   conflicts = diff --name-only --diff-filter=U
 [commit]
