@@ -26,7 +26,7 @@ rustup-init
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 # Switch shell to Homebrew zsh
-sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
+sudo dscl . -create /Users/$USER UserShell /opt/homebrew/bin/zsh
 
 # Configure fnm
 fnm install latest
