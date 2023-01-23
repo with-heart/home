@@ -5,6 +5,7 @@ alias sudoedit="sudo $EDITOR"
 alias mkdir="mkdir -p"
 alias l="ls -lah"
 alias g="git"
+alias pf="pnpm --filter"
 alias yw="yarn workspace"
 alias yws="yarn workspaces"
 
