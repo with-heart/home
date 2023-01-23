@@ -9,6 +9,12 @@ alias pf="pnpm --filter"
 alias yw="yarn workspace"
 alias yws="yarn workspaces"
 
+# vscode profiles
+alias teach="code --user-data-dir ~/code_profiles/teaching/data --extensions-dir ~/code_profiles/teaching/extensions"
+
+## add GITHUB_TOKEN to current env
+alias ght="source ~/.bin/ght"
+
 ## replacements
 if command_exists hub; then
   alias g="hub"
@@ -30,6 +36,7 @@ fi
 alias vim="$EDITOR"
 
 alias path='echo $PATH | tr -s ":" "\n"'
+alias fpath='echo $FPATH | tr -s ":" "\n"'
 
 alias tf=terraform
 
